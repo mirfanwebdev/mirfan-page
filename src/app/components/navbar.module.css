@@ -1,0 +1,22 @@
+.nav {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.nav a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.links {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.resume {
+  border: 1px solid black;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+}
