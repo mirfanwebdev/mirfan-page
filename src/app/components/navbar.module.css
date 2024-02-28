@@ -2,7 +2,8 @@
   display: flex;
   gap: 2rem;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: flex-start;
+  padding: 0.5rem 10rem;
 }
 
 .nav a {
@@ -15,8 +16,13 @@
   gap: 1.5rem;
 }
 
+.active {
+  font-weight: bold;
+}
+
 .resume {
-  border: 1px solid black;
-  padding: 0.5rem 1rem;
-  border-radius: 8px;
+  padding: 0.25rem 0.5rem;
+  background-color: aliceblue;
+  border-radius: 0.5rem;
+  /* vertical-align: middle; */
 }

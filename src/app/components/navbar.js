@@ -1,5 +1,9 @@
+"use client";
 import Link from "next/link";
+import { useState } from "react";
 import styles from "./navbar.module.css";
+// import { useEffect } from "react";
+import { MdArrowOutward } from "react-icons/md";
 
 const links = [
   {
@@ -11,7 +15,7 @@ const links = [
     href: "#about",
   },
   {
-    label: "Skillset",
+    label: "Skills",
     href: "#skills",
   },
   {
@@ -21,17 +25,27 @@ const links = [
 ];
 
 export default function Navbar() {
+  const [location, setLocation] = useState(window.location.hash);
+
+  const handleLocation = (param) => {
+    setLocation(param);
+  };
   return (
     <nav className={styles.nav}>
       <div className={styles.links}>
         {links.map((link) => (
-          <Link key={link.href} href={link.href}>
+          <Link
+            className={location == link.href ? styles.active : ""}
+            key={link.href}
+            href={link.href}
+            onClick={() => handleLocation(link.href)}
+          >
             {link.label}
           </Link>
         ))}
       </div>
       <Link className={styles.resume} href="/resume">
-        Resume
+        Resume <MdArrowOutward />
       </Link>
     </nav>
   );

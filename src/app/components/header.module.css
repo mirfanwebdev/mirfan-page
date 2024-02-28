@@ -1,0 +1,31 @@
+.header {
+  /* display: flex;
+  flex-direction: column;
+  justify-content: space-between; */
+  height: inherit;
+}
+.summary {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  margin-bottom: 2rem;
+}
+
+.summary h1 {
+  font-size: 3rem;
+}
+
+.summary h2 {
+  font-size: x-large;
+  font-weight: 500;
+}
+
+.summary p {
+  font-weight: 500;
+}
+
+.photo {
+  border-radius: 50%;
+  margin-bottom: 4rem;
+  /* align-self: center; */
+}

@@ -1,6 +1,7 @@
 .contact {
   display: flex;
   gap: 2rem;
+  align-items: center;
 }
 
 .contact a {
