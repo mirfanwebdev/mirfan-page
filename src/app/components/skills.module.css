@@ -1,0 +1,12 @@
+.skillList {
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  font-size: x-large;
+}
+
+.skillItem {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
