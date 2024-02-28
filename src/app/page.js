@@ -4,7 +4,7 @@ import Skills from "./components/skills";
 
 function About() {
   return (
-    <section>
+    <section id="about">
       <p>
         Back in 2021, when pandemy happened I was working as laboratory analyst.
         I was thinking about how to improve my skills.
@@ -15,7 +15,7 @@ function About() {
 
 function Projects() {
   return (
-    <section>
+    <section id="projects">
       <p>Projects</p>
     </section>
   );

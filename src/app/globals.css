@@ -23,9 +23,11 @@ a {
 }
 
 .main-container {
-  /* min-height: 100vh; */
+  /* max-height: 100vh; */
+  /* height: 85vh; */
   display: flex;
-  gap: 4rem;
+  gap: 10rem;
   justify-content: center;
   align-items: center;
+  padding: 3rem 10rem;
 }
