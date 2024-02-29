@@ -27,11 +27,7 @@ export default function Navbar() {
   const [location, setLocation] = useState("");
 
   useEffect(() => {
-    const onLocationChange = () => {
-      setLocation(window.location.hash);
-    };
-    // window.addEventListener("hashchange", onLocationChange);
-    // return () => window.removeEventListener("hashchange", onLocationChange);
+    setLocation(window.location.hash);
   }, []);
   const handleLocation = (param) => {
     setLocation(param);

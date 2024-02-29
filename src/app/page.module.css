@@ -1,1 +1,46 @@
+.projectsContainer {
+  display: flex;
+  gap: 1.5rem;
+  padding: 1.25rem 1rem;
+}
 
+.projectsContainer:hover {
+  background-color: var(--dark-secondary);
+  border-radius: 12px;
+}
+
+.projectsContainer:hover h3 {
+  color: var(--light-primary);
+}
+
+.projectsContainer h3 {
+  font-size: medium;
+}
+
+.projectsContainer p {
+  font-size: 0.85rem;
+}
+
+.image {
+  border-radius: 8px;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.stacks {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.stacks p {
+  font-size: 0.75rem;
+  background-color: var(--dark-secondary);
+  /* color: var(--dark-primary); */
+  padding: 0.25rem 0.5rem;
+  border-radius: 5px;
+  /* font-weight: 600; */
+}
