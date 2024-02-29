@@ -2,11 +2,16 @@
   list-style-type: none;
   display: grid;
   grid-template-columns: auto auto auto;
+  gap: 1rem 3rem;
   font-size: x-large;
 }
 
 .skillItem {
   display: flex;
-  gap: 0.5rem;
+  gap: 0.75rem;
   align-items: center;
+  background-color: var(--dark-secondary);
+  color: var(--light-primary);
+  padding: 0.5rem 1.85rem;
+  border-radius: 8px;
 }

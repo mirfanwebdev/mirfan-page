@@ -27,5 +27,10 @@
 .photo {
   border-radius: 50%;
   margin-bottom: 4rem;
+  border: 3px solid var(--light-secondary);
   /* align-self: center; */
+}
+
+.photo:hover {
+  border-color: var(--light-primary);
 }

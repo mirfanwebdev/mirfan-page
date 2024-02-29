@@ -46,7 +46,7 @@ export default function Skills() {
       <ul className={styles.skillList}>
         {skills.map((skill) => (
           <li className={styles.skillItem} key={skill.name}>
-            <p>{skill.icon}</p>
+            {skill.icon}
             <p>{skill.name}</p>
           </li>
         ))}
