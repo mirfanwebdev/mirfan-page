@@ -1,8 +1,7 @@
 "use client";
 import Link from "next/link";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import styles from "./navbar.module.css";
-// import { useEffect } from "react";
 import { MdArrowOutward } from "react-icons/md";
 
 const links = [
@@ -25,8 +24,15 @@ const links = [
 ];
 
 export default function Navbar() {
-  const [location, setLocation] = useState(window.location.hash);
+  const [location, setLocation] = useState("");
 
+  useEffect(() => {
+    const onLocationChange = () => {
+      setLocation(window.location.hash);
+    };
+    // window.addEventListener("hashchange", onLocationChange);
+    // return () => window.removeEventListener("hashchange", onLocationChange);
+  }, []);
   const handleLocation = (param) => {
     setLocation(param);
   };

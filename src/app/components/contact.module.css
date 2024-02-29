@@ -15,6 +15,10 @@
   align-items: center;
 }
 
+.iconContainer:hover {
+  color: var(--light-primary);
+}
+
 .icon {
   font-size: 1.75rem;
 }

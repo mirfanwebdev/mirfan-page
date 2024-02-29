@@ -3,13 +3,12 @@
   gap: 2rem;
   align-items: center;
   justify-content: flex-start;
-  padding: 0.5rem 10rem;
+  padding: 0.75rem 10rem;
 }
 
-.nav a {
+/* .nav a {
   text-decoration: none;
-  color: inherit;
-}
+} */
 
 .links {
   display: flex;
@@ -17,12 +16,15 @@
 }
 
 .active {
-  font-weight: bold;
+  font-weight: 600;
+  color: var(--light-primary);
 }
 
 .resume {
-  padding: 0.25rem 0.5rem;
-  background-color: aliceblue;
+  padding: 0.25rem 0.75rem;
+  background-color: var(--dark-secondary);
+  color: var(--light-primary);
+  /* color: var(--light-secondary); */
   border-radius: 0.5rem;
   /* vertical-align: middle; */
 }
