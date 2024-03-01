@@ -4,13 +4,28 @@ import frontImg from "@/app/assets/front-mentor-3.jpg";
 import Skills from "./components/skills";
 import { MdArrowOutward } from "react-icons/md";
 import styles from "./page.module.css";
+import Link from "next/link";
 
 function About() {
   return (
-    <section id="about">
+    <section id="about" className={styles.aboutSection}>
+      <h3>About</h3>
       <p>
-        Back in 2021, when pandemic happened I was working as laboratory
-        analyst. I was thinking about how to improve my skills.
+        Back in 2021, when pandemic happened, I was working as laboratory
+        analyst. Today I am pursue my passion for problem-solving and create
+        meaningful website, and then my journey into web development began.
+      </p>
+      <p>
+        Through intensive bootcamp and self-learning, I have acquired
+        proficiency to build responsive web. I have learned the fundamental of
+        HTML, CSS, JavaScript, and React. I also have knowledge to build single
+        page applications with NextJS and Redux.
+      </p>
+      <p>
+        With my background, I bring unique prespective. My analytical mindset
+        combine with my newfound technical skills, allows me to deliver high
+        quality work. I thrive in colaborative environment, and dedicated to
+        continous learning and growth in field of web development.
       </p>
     </section>
   );
@@ -19,6 +34,7 @@ function About() {
 function Projects() {
   const projectList = [
     {
+      url: "https://23001028-14-kel2-car-rental-platinum-customer.vercel.app/",
       image: binarImg,
       title: "Binar Car Rental - Customer",
       details:
@@ -37,6 +53,7 @@ function Projects() {
     //   stacks: ["NextJS", "Module CSS", "Vercel"],
     // },
     {
+      url: "https://www.frontendmentor.io/profile/mirfanwebdev",
       image: frontImg,
       title: "Frontendmentor.io - M. Irfan challenge solutions",
       details:
@@ -44,10 +61,16 @@ function Projects() {
     },
   ];
   return (
-    <section id="projects">
-      <p>Projects</p>
+    <section id="projects" className={styles.projectSection}>
+      <h3>Projects</h3>
       {projectList.map((project) => (
-        <div key={project.title} className={styles.projectsContainer}>
+        <Link
+          href={project?.url}
+          target="_blank"
+          rel="noopener noreferrer"
+          key={project.title}
+          className={styles.projectsContainer}
+        >
           {project.image && (
             <Image
               src={project.image}
@@ -67,7 +90,7 @@ function Projects() {
               ))}
             </div>
           </div>
-        </div>
+        </Link>
       ))}
     </section>
   );

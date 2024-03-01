@@ -30,12 +30,24 @@ a {
   color: inherit;
 }
 
-.main-container {
-  /* max-height: 100vh; */
-  /* height: 85vh; */
+.header-container {
+  max-height: 100vh;
+  max-width: 800px;
   display: flex;
-  gap: 10rem;
-  justify-content: center;
-  align-items: center;
-  padding: 3rem 10rem;
+  flex-direction: column;
+  gap: 2.5rem;
+  padding: 0.75rem 10rem;
+  position: fixed;
+  /* gap: 10rem; */
+  /* justify-content: center; */
+  /* align-items: center; */
+  /* padding: 3rem 10rem; */
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  margin-left: 550px;
+  padding: 5rem 10rem;
 }

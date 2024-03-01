@@ -1,3 +1,20 @@
+.aboutSection {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.aboutSection h3 {
+  padding: 1.2rem 0;
+}
+
+.aboutSection p {
+  line-height: 1.5;
+}
+
+.projectSection > h3 {
+  padding: 1.2rem 0;
+}
 .projectsContainer {
   display: flex;
   gap: 1.5rem;
