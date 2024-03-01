@@ -41,8 +41,8 @@ export default function Skills() {
     },
   ];
   return (
-    <section>
-      <p>Skills</p>
+    <section id="skills" className={styles.skillSection}>
+      <h3>Skills</h3>
       <ul className={styles.skillList}>
         {skills.map((skill) => (
           <li className={styles.skillItem} key={skill.name}>

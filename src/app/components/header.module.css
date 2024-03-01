@@ -1,8 +1,7 @@
 .header {
-  /* display: flex;
-  flex-direction: column;
-  justify-content: space-between; */
-  height: inherit;
+  position: -webkit-sticky;
+  position: sticky;
+  left: 0;
 }
 .summary {
   display: flex;
