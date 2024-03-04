@@ -79,7 +79,7 @@ export default function Navbar() {
           </Link>
         ))}
       </div>
-      <Link className={styles.resume} href="/resume">
+      <Link className={styles.resume} target="_blank" href="resume.pdf">
         Resume <MdArrowOutward />
       </Link>
     </nav>

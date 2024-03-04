@@ -6,6 +6,9 @@ import Header from "./components/header";
 const montserrat = Montserrat({ subsets: ["latin"] });
 
 export const metadata = {
+  icons: {
+    icon: "/icon.svg",
+  },
   title: "M. Irfan ",
   description:
     "M. irfan is former biologist who currently career switching to front end web developer",

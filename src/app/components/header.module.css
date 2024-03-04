@@ -12,11 +12,13 @@
 
 .summary h1 {
   font-size: 3rem;
+  color: whitesmoke;
 }
 
 .summary h2 {
   font-size: x-large;
   font-weight: 500;
+  color: whitesmoke;
 }
 
 .summary p {
