@@ -6,14 +6,21 @@
 
 .aboutSection h3 {
   padding: 1.2rem 0;
+  color: whitesmoke;
 }
 
 .aboutSection p {
   line-height: 1.5;
 }
 
+.aboutSection b {
+  font-weight: 600;
+  color: whitesmoke;
+}
+
 .projectSection > h3 {
   padding: 1.2rem 0;
+  color: whitesmoke;
 }
 .projectsContainer {
   display: flex;
@@ -60,4 +67,12 @@
   padding: 0.25rem 0.5rem;
   border-radius: 5px;
   /* font-weight: 600; */
+}
+
+.footer {
+  font-size: 0.9rem;
+}
+
+.footer b {
+  font-weight: 600;
 }

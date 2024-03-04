@@ -1,6 +1,7 @@
 import Image from "next/image";
 import binarImg from "@/app/assets/binar-car-screenshot.png";
 import frontImg from "@/app/assets/front-mentor-3.jpg";
+import irfanImg from "@/app/assets/mirfan-page.png";
 import Skills from "./components/skills";
 import { MdArrowOutward } from "react-icons/md";
 import styles from "./page.module.css";
@@ -9,17 +10,17 @@ import Link from "next/link";
 function About() {
   return (
     <section id="about" className={styles.aboutSection}>
-      <h3>About</h3>
+      <h3>About Me</h3>
       <p>
         Back in 2021, when pandemic happened, I was working as laboratory
-        analyst. Today I am pursue my passion for problem-solving and create
-        meaningful website, and then my journey into web development began.
+        analyst. Today I pursue my passion for problem-solving and create
+        meaningful website, then my journey into font end web development began.
       </p>
       <p>
         Through intensive bootcamp and self-learning, I have acquired
-        proficiency to build responsive web. I have learned the fundamental of
-        HTML, CSS, JavaScript, and React. I also have knowledge to build single
-        page applications with NextJS and Redux.
+        proficiency to build <b>responsive web</b>. I have learned the
+        fundamental of HTML, CSS, JavaScript, and React. I also have knowledge
+        to build <b>single page applications</b> with NextJS and Redux.
       </p>
       <p>
         With my background, I bring unique prespective. My analytical mindset
@@ -47,17 +48,19 @@ function Projects() {
     //     "Admin dashboard web application for managing restaurant menus. Login and create your account, view sales data, and manage your menu. Add, edit and delete the menu.",
     //   stacks: ["Vite", "React", "Redux Toolkit", "Tailwind", "Vercel"],
     // },
-    // {
-    //   title: "M. Irfan portofolio site",
-    //   details: "My personal portofolio site build with NextJS and Vercel",
-    //   stacks: ["NextJS", "Module CSS", "Vercel"],
-    // },
+    {
+      url: "",
+      image: irfanImg,
+      title: "M. Irfan's portofolio site",
+      details: "My personal portofolio site build with NextJS and Vercel",
+      stacks: ["NextJS", "CSS-modules", "Vercel"],
+    },
     {
       url: "https://www.frontendmentor.io/profile/mirfanwebdev",
       image: frontImg,
       title: "Frontendmentor.io - M. Irfan challenge solutions",
       details:
-        "Solutions for Frontend Mentor challenges. View solutions from design challenge and implement with determined tech stacks",
+        "Solutions for Frontend Mentor challenges. View solutions from design challenge and implementation with determined tech stacks",
     },
   ];
   return (
@@ -96,12 +99,24 @@ function Projects() {
   );
 }
 
+function Footer() {
+  return (
+    <footer className={styles.footer}>
+      <p>
+        2024. Build with <b>NextJS</b> and deployed with <b>Vercel</b> by{" "}
+        <b>M. Irfan</b>
+      </p>
+    </footer>
+  );
+}
+
 export default function Home() {
   return (
     <>
       <About />
       <Skills />
       <Projects />
+      <Footer />
     </>
   );
 }
