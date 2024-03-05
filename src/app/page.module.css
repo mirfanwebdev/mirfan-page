@@ -47,6 +47,8 @@
 
 .image {
   border-radius: 8px;
+  /* width: 175px;
+  object-fit: contain; */
 }
 
 .info {
@@ -58,15 +60,15 @@
 .stacks {
   display: flex;
   gap: 0.5rem;
+  align-items: center;
 }
 
 .stacks p {
   font-size: 0.75rem;
   background-color: var(--dark-secondary);
-  /* color: var(--dark-primary); */
   padding: 0.25rem 0.5rem;
   border-radius: 5px;
-  /* font-weight: 600; */
+  text-align: center;
 }
 
 .footer {
@@ -75,4 +77,14 @@
 
 .footer b {
   font-weight: 600;
+}
+
+@media screen and (max-width: 640px) {
+  .projectsContainer {
+    flex-direction: column;
+  }
+  .image {
+    align-self: center;
+    /* width: 200px; */
+  }
 }
