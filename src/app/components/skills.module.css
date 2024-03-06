@@ -19,3 +19,14 @@
   padding: 0.5rem 1.85rem;
   border-radius: 8px;
 }
+
+@media screen and (max-width: 640px) {
+  .skillList {
+    grid-template-columns: auto auto;
+    gap: 1rem 1rem;
+  }
+
+  .skillItem {
+    padding: 0.5rem 1.25rem;
+  }
+}

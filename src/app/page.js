@@ -74,14 +74,13 @@ function Projects() {
           key={project.title}
           className={styles.projectsContainer}
         >
-          {project.image && (
-            <Image
-              src={project.image}
-              className={styles.image}
-              width={150}
-              alt="project image"
-            />
-          )}
+          <Image
+            src={project.image}
+            className={styles.image}
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 25vw, 10vw"
+            width={200}
+            alt="project image"
+          />
           <div className={styles.info}>
             <h3>
               {project.title} <MdArrowOutward />
