@@ -3,6 +3,7 @@ import Link from "next/link";
 import { useState, useEffect } from "react";
 import styles from "./navbar.module.css";
 import { MdArrowOutward } from "react-icons/md";
+import { IoMenu, IoClose } from "react-icons/io5";
 
 const links = [
   {
@@ -30,6 +31,7 @@ const links = [
 export default function Navbar() {
   const [location, setLocation] = useState("");
   const [active, setActive] = useState("");
+  const [open, setOpen] = useState(false);
 
   useEffect(() => {
     setLocation(window.location.hash);
@@ -55,33 +57,50 @@ export default function Navbar() {
       observer.observe(section);
     });
   }, []);
+  const handleLink = (param) => {
+    handleLocation(param);
+    handleOpen();
+  };
   const handleLocation = (param) => {
     setLocation(param);
+  };
+
+  const handleOpen = () => {
+    setOpen(!open);
   };
 
   // console.log(active);
   return (
     <nav className={styles.nav}>
-      <div className={styles.links}>
-        {links.map((link) => (
-          <Link
-            className={
-              active == link.id ||
-              (active == link.id && location == `#${link.href}`)
-                ? styles.active
-                : ""
-            }
-            key={link.href}
-            href={link.href}
-            onClick={() => handleLocation(link.href)}
-          >
-            {link.label}
-          </Link>
-        ))}
+      <div className={styles.mobileMenu} style={{ right: open ? "0" : "" }}>
+        <div className={styles.links}>
+          {links.map((link) => (
+            <Link
+              className={
+                active == link.id ||
+                (active == link.id && location == `#${link.href}`)
+                  ? styles.active
+                  : ""
+              }
+              key={link.href}
+              href={link.href}
+              onClick={() => handleLink(link.href)}
+            >
+              {link.label}
+            </Link>
+          ))}
+        </div>
+        <Link className={styles.resume} target="_blank" href="resume.pdf">
+          Resume <MdArrowOutward />
+        </Link>
       </div>
-      <Link className={styles.resume} target="_blank" href="resume.pdf">
-        Resume <MdArrowOutward />
-      </Link>
+      <div className={styles.toggle}>
+        {open ? (
+          <IoClose onClick={handleOpen} />
+        ) : (
+          <IoMenu onClick={handleOpen} />
+        )}
+      </div>
     </nav>
   );
 }
