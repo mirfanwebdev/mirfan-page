@@ -30,7 +30,7 @@ const links = [
 
 export default function Navbar() {
   const [location, setLocation] = useState("");
-  const [active, setActive] = useState("");
+  const [active, setActive] = useState(null);
   const [open, setOpen] = useState(false);
 
   useEffect(() => {
@@ -43,7 +43,7 @@ export default function Navbar() {
     const observerOptions = {
       root: null,
       rootMargin: "0px",
-      threshold: 1.0,
+      threshold: 0.75,
     };
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
@@ -56,6 +56,9 @@ export default function Navbar() {
     sections.forEach((section) => {
       observer.observe(section);
     });
+    return () => {
+      observer.disconnect();
+    };
   }, []);
   const handleLink = (param) => {
     handleLocation(param);
