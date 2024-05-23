@@ -1,24 +1,4 @@
-.aboutSection {
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-}
-
-.aboutSection h3 {
-  padding: 1.2rem 0;
-  color: whitesmoke;
-}
-
-.aboutSection p {
-  line-height: 1.5;
-}
-
-.aboutSection b {
-  font-weight: 600;
-  color: whitesmoke;
-}
-
-/* .projectSection > h3 {
+.projectSection > h3 {
   padding: 1.2rem 0;
   color: whitesmoke;
 }
@@ -48,9 +28,9 @@
 .image {
   border-radius: 8px;
   /* width: 175px;
-  object-fit: contain; 
-}*/
-/* 
+    object-fit: contain; */
+}
+
 .info {
   display: flex;
   flex-direction: column;
@@ -69,14 +49,6 @@
   padding: 0.25rem 0.5rem;
   border-radius: 5px;
   text-align: center;
-} */
-
-.footer {
-  font-size: 0.9rem;
-}
-
-.footer b {
-  font-weight: 600;
 }
 
 @media screen and (max-width: 640px) {
