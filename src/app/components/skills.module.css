@@ -13,6 +13,7 @@
 .skillItem {
   display: flex;
   gap: 0.75rem;
+  justify-content: center;
   align-items: center;
   background-color: var(--dark-secondary);
   color: var(--light-primary);
@@ -20,10 +21,16 @@
   border-radius: 8px;
 }
 
+.skillItem:hover {
+  background-color: var(--light-primary);
+  color: var(--dark-secondary);
+}
+
 @media screen and (max-width: 640px) {
   .skillList {
-    grid-template-columns: auto auto;
+    grid-template-columns: 42.5vw 42.5vw;
     gap: 1rem 1rem;
+    font-size: 20px;
   }
 
   .skillItem {

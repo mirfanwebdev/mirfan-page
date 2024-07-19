@@ -5,6 +5,7 @@ import huddleImg from "@/app/assets/huddle-screenshot.png";
 import notifImg from "@/app/assets/notification-screenshot.png";
 import frontImg from "@/app/assets/front-mentor-3.jpg";
 import irfanImg from "@/app/assets/mirfan-page.png";
+import newsImg from "@/app/assets/news.png";
 import { MdArrowOutward } from "react-icons/md";
 import styles from "./projects.module.css";
 export default function Projects({ id }) {
@@ -29,6 +30,14 @@ export default function Projects({ id }) {
       title: "M. Irfan's portofolio site",
       details: "My personal portofolio site build with NextJS and Vercel",
       stacks: ["NextJS", "CSS-modules", "Vercel"],
+    },
+    {
+      url: "https://mirfanwebdev.github.io/frontend-mentor-news/",
+      image: newsImg,
+      title: "News Page - Frontendmentor.io",
+      details:
+        "Challenge from Frontend Mentor to make news homepage, build with NextJS and TypeScript",
+      stacks: ["NextJS", "TypeScript", "Tailwind"],
     },
     {
       url: "https://mirfanwebdev.github.io/frontendmentor-huddle-landingpage/",
