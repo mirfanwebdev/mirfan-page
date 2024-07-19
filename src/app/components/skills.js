@@ -2,7 +2,7 @@ import { DiHtml5 } from "react-icons/di";
 import { DiCss3 } from "react-icons/di";
 import { DiJsBadge } from "react-icons/di";
 import { DiReact } from "react-icons/di";
-import { SiRedux } from "react-icons/si";
+import { SiRedux, SiTypescript } from "react-icons/si";
 import { SiNextdotjs } from "react-icons/si";
 import { SiTailwindcss } from "react-icons/si";
 import { DiGit } from "react-icons/di";
@@ -34,6 +34,10 @@ export default function Skills() {
     {
       name: "Tailwind",
       icon: <SiTailwindcss />,
+    },
+    {
+      name: "TS",
+      icon: <SiTypescript />,
     },
     {
       name: "Git",
