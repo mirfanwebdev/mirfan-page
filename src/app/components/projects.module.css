@@ -27,8 +27,9 @@
 
 .image {
   border-radius: 8px;
-  /* width: 175px;
-    object-fit: contain; */
+  /* width: 100%; */
+  width: 200px;
+  height: auto;
 }
 
 .info {
@@ -51,12 +52,17 @@
   text-align: center;
 }
 
+.projectsContainer:hover .stacks p {
+  background-color: var(--light-primary);
+  color: var(--dark-secondary);
+}
+
 @media screen and (max-width: 640px) {
   .projectsContainer {
     flex-direction: column;
   }
   .image {
+    width: 90%;
     align-self: center;
-    /* width: 200px; */
   }
 }

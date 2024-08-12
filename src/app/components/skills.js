@@ -6,6 +6,7 @@ import { SiRedux, SiTypescript } from "react-icons/si";
 import { SiNextdotjs } from "react-icons/si";
 import { SiTailwindcss } from "react-icons/si";
 import { DiGit } from "react-icons/di";
+import { SiVuedotjs } from "react-icons/si";
 import styles from "./skills.module.css";
 
 export default function Skills() {
@@ -42,6 +43,10 @@ export default function Skills() {
     {
       name: "Git",
       icon: <DiGit />,
+    },
+    {
+      name: "Vue",
+      icon: <SiVuedotjs />,
     },
   ];
   return (
