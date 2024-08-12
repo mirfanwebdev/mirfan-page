@@ -6,8 +6,11 @@ import notifImg from "@/app/assets/notification-screenshot.png";
 import frontImg from "@/app/assets/front-mentor-3.jpg";
 import irfanImg from "@/app/assets/mirfan-page.png";
 import newsImg from "@/app/assets/news.png";
+import loopImg from "@/app/assets/loopstudio.png";
 import { MdArrowOutward } from "react-icons/md";
+import { BsGithub } from "react-icons/bs";
 import styles from "./projects.module.css";
+import { Odor_Mean_Chey } from "next/font/google";
 export default function Projects({ id }) {
   const projectList = [
     {
@@ -17,6 +20,8 @@ export default function Projects({ id }) {
       details:
         "Binar bootcamp assignment project, web app for renting cars. Login and register your account, view and search your desired car, and set your renting duration. Create order and pick your bank payment.",
       stacks: ["Vite", "React", "Redux Toolkit", "Ant Design", "Vercel"],
+      gitUrl:
+        "https://github.com/jogisyamantha/23001028_14_kel2_car-rental_platinum_customer",
     },
     // {
     //   title: "Restoku - Restaurant Admin",
@@ -30,6 +35,7 @@ export default function Projects({ id }) {
       title: "M. Irfan's portofolio site",
       details: "My personal portofolio site build with NextJS and Vercel",
       stacks: ["NextJS", "CSS-modules", "Vercel"],
+      gitUrl: "https://github.com/mirfanwebdev/mirfan-page",
     },
     {
       url: "https://mirfanwebdev.github.io/frontend-mentor-news/",
@@ -38,6 +44,17 @@ export default function Projects({ id }) {
       details:
         "Challenge from Frontend Mentor to make news homepage, build with NextJS and TypeScript",
       stacks: ["NextJS", "TypeScript", "Tailwind"],
+      gitUrl: "https://github.com/mirfanwebdev/frontend-mentor-news",
+    },
+    {
+      url: "https://loopstudio-landing-frontendmentor.vercel.app/",
+      image: loopImg,
+      title: "Loopstudio Landing Page - Frontendmentor.io",
+      details:
+        "Challenge from Frontend Mentor to make responsive landing page, build with VueJS",
+      stacks: ["VueJS"],
+      gitUrl:
+        "https://github.com/mirfanwebdev/loopstudio-landing-frontendmentor",
     },
     {
       url: "https://mirfanwebdev.github.io/frontendmentor-huddle-landingpage/",
@@ -46,6 +63,8 @@ export default function Projects({ id }) {
       details:
         "Challenge from Frontend Mentor to make responsive landing page, build with Tailwind",
       stacks: ["HTML", "Tailwind"],
+      gitUrl:
+        "https://github.com/mirfanwebdev/frontendmentor-huddle-landingpage",
     },
     {
       url: "https://mirfanwebdev.github.io/frontendmentor-notification/",
@@ -54,6 +73,7 @@ export default function Projects({ id }) {
       details:
         "Challenge from Frontend Mentor to make notification page, build with JavaScript",
       stacks: ["HTML", "JavaScript"],
+      gitUrl: "https://github.com/mirfanwebdev/frontendmentor-notification",
     },
     {
       url: "https://www.frontendmentor.io/profile/mirfanwebdev",
@@ -77,8 +97,6 @@ export default function Projects({ id }) {
           <Image
             src={project.image}
             className={styles.image}
-            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 25vw, 10vw"
-            width={200}
             alt="project image"
           />
           <div className={styles.info}>
