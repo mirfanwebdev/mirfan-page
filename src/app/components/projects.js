@@ -87,13 +87,7 @@ export default function Projects({ id }) {
     <section id="projects" className={styles.projectSection}>
       <h3>Projects</h3>
       {projectList.map((project) => (
-        <Link
-          href={project?.url}
-          target="_blank"
-          rel="noopener noreferrer"
-          key={project.title}
-          className={styles.projectsContainer}
-        >
+        <div key={project.title} className={styles.projectsContainer}>
           <Image
             src={project.image}
             className={styles.image}
@@ -101,16 +95,36 @@ export default function Projects({ id }) {
           />
           <div className={styles.info}>
             <h3>
-              {project.title} <MdArrowOutward />
+              <Link
+                href={project?.url}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <span className={styles.links}></span>
+                {project.title} <MdArrowOutward />
+              </Link>
             </h3>
             <p>{project.details}</p>
+
             <div className={styles.stacks}>
               {project.stacks?.map((stack) => (
                 <p key={stack}>{stack}</p>
               ))}
             </div>
+            {project.gitUrl && (
+              <Link
+                href={project.gitUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className={styles.git}
+              >
+                <BsGithub />
+
+                <p>source code</p>
+              </Link>
+            )}
           </div>
-        </Link>
+        </div>
       ))}
     </section>
   );
