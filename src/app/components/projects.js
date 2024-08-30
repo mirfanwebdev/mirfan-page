@@ -105,12 +105,6 @@ export default function Projects({ id }) {
               </Link>
             </h3>
             <p>{project.details}</p>
-
-            <div className={styles.stacks}>
-              {project.stacks?.map((stack) => (
-                <p key={stack}>{stack}</p>
-              ))}
-            </div>
             {project.gitUrl && (
               <Link
                 href={project.gitUrl}
@@ -120,9 +114,14 @@ export default function Projects({ id }) {
               >
                 <BsGithub />
 
-                <p>source code</p>
+                <p>GitHub</p>
               </Link>
             )}
+            <div className={styles.stacks}>
+              {project.stacks?.map((stack) => (
+                <p key={stack}>{stack}</p>
+              ))}
+            </div>
           </div>
         </div>
       ))}
