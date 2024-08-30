@@ -39,11 +39,12 @@ export default function Navbar() {
 
   useEffect(() => {
     let sections = document.querySelectorAll("section");
+    // let sections = document.querySelector("main");
     // console.log(sections);
     const observerOptions = {
       root: null,
       rootMargin: "0px",
-      threshold: 0.75,
+      threshold: 0.5,
     };
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {

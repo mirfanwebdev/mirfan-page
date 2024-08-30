@@ -6,6 +6,8 @@
   display: flex;
   gap: 1.5rem;
   padding: 1.25rem 1rem;
+  position: relative;
+  align-items: flex-start;
 }
 
 .projectsContainer:hover {
@@ -13,7 +15,8 @@
   border-radius: 12px;
 }
 
-.projectsContainer:hover h3 {
+.projectsContainer:hover h3,
+.git:hover {
   color: var(--light-primary);
 }
 
@@ -36,6 +39,21 @@
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
+}
+
+.git {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.85rem;
+  font-weight: 500;
+  position: relative;
+}
+
+.links {
+  display: block;
+  position: absolute;
+  inset: -1rem -1.5rem;
 }
 
 .stacks {
