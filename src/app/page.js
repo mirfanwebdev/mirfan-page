@@ -7,15 +7,15 @@ function About() {
     <section id="about" className={styles.aboutSection}>
       <h3>About Me</h3>
       <p>
-        Back in 2021, when pandemic happened, I was working as laboratory
-        analyst. Today I pursue my passion for problem-solving and create
-        meaningful website, then my journey into font end web development began.
+        Frontend Developer with passion for problem-solving and create
+        meaningful website.
       </p>
       <p>
         Through intensive bootcamp and self-learning, I have acquired
         proficiency to build <b>responsive web</b>. I have learned the
-        fundamental of HTML, CSS, JavaScript, and React. I also have knowledge
-        to build <b>single page applications</b> with NextJS and Redux.
+        fundamental of HTML, CSS, JavaScript, React, and Vue. I also have
+        knowledge to build <b>single page applications</b> with NextJS,
+        TypeScript and Redux.
       </p>
       <p>
         With my background, I bring unique prespective. My analytical mindset

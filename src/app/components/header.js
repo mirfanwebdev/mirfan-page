@@ -10,8 +10,7 @@ export default function Header() {
         <h1>M. Irfan</h1>
         <h2>Front End Web Developer</h2>
         <p>
-          Former biologist who currently career switching to front end web
-          developer
+          Science and tech enthusiast who pursue his passion in web development.
         </p>
       </div>
       <Image
