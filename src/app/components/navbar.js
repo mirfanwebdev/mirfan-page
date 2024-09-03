@@ -76,6 +76,14 @@ export default function Navbar() {
   // console.log(active);
   return (
     <nav className={styles.nav}>
+      {open ? (
+        <div className={styles.outerMenu}></div>
+      ) : (
+        <div
+          className={styles.outerMenu}
+          style={{ background: "transparent" }}
+        ></div>
+      )}
       <div className={styles.mobileMenu} style={{ right: open ? "0" : "" }}>
         <div className={styles.links}>
           {links.map((link) => (

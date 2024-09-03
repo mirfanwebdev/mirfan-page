@@ -44,7 +44,11 @@
     /* padding: 0.5rem 0; */
   }
   .summary {
+    align-items: center;
     margin-bottom: 0;
+  }
+  .summary p {
+    text-align: center;
   }
   .photo {
     align-self: center;
