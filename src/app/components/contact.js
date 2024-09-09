@@ -42,7 +42,7 @@ export default function Contact() {
           className={styles.iconContainer}
           key={contact.url}
           href={contact.url}
-          // target="_blank"
+          target="_blank"
         >
           <p className={styles.icon}>{contact.icon}</p>
           <p className={styles.alt}>{contact.name}</p>
