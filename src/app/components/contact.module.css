@@ -27,9 +27,16 @@
   font-size: 0.75rem;
 }
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 850px) {
   .contact {
     justify-content: space-evenly;
     gap: 0;
   }
 }
+
+/* @media screen and (max-width: 640px) {
+  .contact {
+    justify-content: space-evenly;
+    gap: 0;
+  }
+} */
