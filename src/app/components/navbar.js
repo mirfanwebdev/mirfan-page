@@ -4,29 +4,7 @@ import { useState, useEffect } from "react";
 import styles from "./navbar.module.css";
 import { MdArrowOutward } from "react-icons/md";
 import { IoMenu, IoClose } from "react-icons/io5";
-
-const links = [
-  {
-    label: "Home",
-    href: "/",
-    id: "home",
-  },
-  {
-    label: "About",
-    href: "#about",
-    id: "about",
-  },
-  {
-    label: "Skills",
-    href: "#skills",
-    id: "skills",
-  },
-  {
-    label: "Projects",
-    href: "#projects",
-    id: "projects",
-  },
-];
+import { linkList as links } from "../lib/linkList";
 
 export default function Navbar() {
   const [location, setLocation] = useState("");
@@ -39,13 +17,13 @@ export default function Navbar() {
 
   useEffect(() => {
     let sections = document.querySelectorAll("section");
-    // let sections = document.querySelector("main");
-    // console.log(sections);
+
     const observerOptions = {
       root: null,
       rootMargin: "0px",
       threshold: 0.5,
     };
+
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
@@ -57,14 +35,17 @@ export default function Navbar() {
     sections.forEach((section) => {
       observer.observe(section);
     });
+
     return () => {
       observer.disconnect();
     };
   }, []);
+
   const handleLink = (param) => {
     handleLocation(param);
     handleOpen();
   };
+
   const handleLocation = (param) => {
     setLocation(param);
   };
@@ -73,7 +54,6 @@ export default function Navbar() {
     setOpen(!open);
   };
 
-  // console.log(active);
   return (
     <nav className={styles.nav}>
       {open ? (
