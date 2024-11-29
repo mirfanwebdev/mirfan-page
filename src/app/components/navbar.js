@@ -8,10 +8,8 @@ import { linkList as links } from "../lib/linkList";
 
 export default function Navbar() {
   const [location, setLocation] = useState("");
-  const [active, setActive] = useState(null);
   const [open, setOpen] = useState(false);
   const [active, setActive] = useState(null);
-  const [open, setOpen] = useState(false);
 
   useEffect(() => {
     setLocation(window.location.hash);
