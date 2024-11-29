@@ -1,12 +1,19 @@
-import { DiHtml5 } from "react-icons/di";
-import { DiCss3 } from "react-icons/di";
-import { DiJsBadge } from "react-icons/di";
-import { DiReact } from "react-icons/di";
-import { SiRedux, SiTypescript } from "react-icons/si";
-import { SiNextdotjs } from "react-icons/si";
-import { SiTailwindcss } from "react-icons/si";
-import { DiGit } from "react-icons/di";
-import { SiVuedotjs } from "react-icons/si";
+import { DiHtml5, DiCss3, DiJsBadge, DiReact, DiGit } from "react-icons/di";
+// import { DiCss3 } from "react-icons/di";
+// import { DiJsBadge } from "react-icons/di";
+// import { DiReact } from "react-icons/di";
+import {
+  SiLess,
+  SiRedux,
+  SiTypescript,
+  SiTailwindcss,
+  SiVuedotjs,
+  SiNextdotjs,
+} from "react-icons/si";
+// import { SiNextdotjs } from "react-icons/si";
+// import { SiTailwindcss } from "react-icons/si";
+// import { DiGit } from "react-icons/di";
+// import { SiVuedotjs } from "react-icons/si";
 import styles from "./skills.module.css";
 
 export default function Skills() {
@@ -19,7 +26,10 @@ export default function Skills() {
       name: "CSS",
       icon: <DiCss3 />,
     },
-    { name: "JS", icon: <DiJsBadge /> },
+    {
+      name: "JS",
+      icon: <DiJsBadge />,
+    },
     {
       name: "React",
       icon: <DiReact />,
@@ -33,8 +43,16 @@ export default function Skills() {
       icon: <SiNextdotjs />,
     },
     {
+      name: "Vue",
+      icon: <SiVuedotjs />,
+    },
+    {
       name: "Tailwind",
       icon: <SiTailwindcss />,
+    },
+    {
+      name: "Less",
+      icon: <SiLess />,
     },
     {
       name: "TS",
@@ -44,11 +62,8 @@ export default function Skills() {
       name: "Git",
       icon: <DiGit />,
     },
-    {
-      name: "Vue",
-      icon: <SiVuedotjs />,
-    },
   ];
+
   return (
     <section id="skills" className={styles.skillSection}>
       <h3>Skills</h3>
