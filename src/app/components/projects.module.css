@@ -71,8 +71,8 @@
 }
 
 .projectsContainer:hover .stacks p {
-  background-color: var(--light-primary);
-  color: var(--dark-secondary);
+  color: var(--light-primary);
+  border: 1px solid var(--light-primary);
 }
 
 @media screen and (max-width: 640px) {

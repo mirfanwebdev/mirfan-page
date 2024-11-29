@@ -26,9 +26,18 @@
   padding: 0.25rem 0.75rem;
   background-color: var(--dark-secondary);
   color: var(--light-primary);
-  /* color: var(--light-secondary); */
   border-radius: 0.5rem;
-  /* vertical-align: middle; */
+  transition: all 0.4s ease-in-out;
+}
+
+.resume:hover {
+  background-color: var(--light-primary);
+  color: var(--dark-secondary);
+}
+
+.toggle {
+  display: none;
+  transition: all 0.5s ease-in-out;
 }
 
 .toggle {
