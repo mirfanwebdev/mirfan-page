@@ -66,7 +66,7 @@ const projectList = [
     details:
       "Challenge from Frontend Mentor to make responsive grid layout, build with Less CSS",
     stacks: ["HTML", "Less CSS"],
-    urlUrl: "https://github.com/mirfanwebdev/bento-grid",
+    gitUrl: "https://github.com/mirfanwebdev/bento-grid",
   },
   {
     url: "https://mirfanwebdev.github.io/frontendmentor-notification/",

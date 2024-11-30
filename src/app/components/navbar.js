@@ -94,43 +94,6 @@ export default function Navbar() {
           <IoMenu onClick={handleOpen} />
         )}
       </div>
-      {open ? (
-        <div className={styles.outerMenu}></div>
-      ) : (
-        <div
-          className={styles.outerMenu}
-          style={{ background: "transparent" }}
-        ></div>
-      )}
-      <div className={styles.mobileMenu} style={{ right: open ? "0" : "" }}>
-        <div className={styles.links}>
-          {links.map((link) => (
-            <Link
-              className={
-                active == link.id ||
-                (active == link.id && location == `#${link.href}`)
-                  ? styles.active
-                  : ""
-              }
-              key={link.href}
-              href={link.href}
-              onClick={() => handleLink(link.href)}
-            >
-              {link.label}
-            </Link>
-          ))}
-        </div>
-        <Link className={styles.resume} target="_blank" href="resume.pdf">
-          Resume <MdArrowOutward />
-        </Link>
-      </div>
-      <div className={styles.toggle}>
-        {open ? (
-          <IoClose onClick={handleOpen} />
-        ) : (
-          <IoMenu onClick={handleOpen} />
-        )}
-      </div>
     </nav>
   );
 }
