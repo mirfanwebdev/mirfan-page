@@ -1,4 +1,4 @@
-import binarImg from "@/app/assets/binar-car-screenshot.png";
+// import binarImg from "@/app/assets/binar-car-screenshot.png";
 import huddleImg from "@/app/assets/huddle-screenshot.png";
 import notifImg from "@/app/assets/notification-screenshot.png";
 import frontImg from "@/app/assets/front-mentor-3.jpg";
@@ -6,8 +6,18 @@ import irfanImg from "@/app/assets/mirfan-page.png";
 import newsImg from "@/app/assets/news.png";
 import loopImg from "@/app/assets/loopstudio.png";
 import bentoImg from "@/app/assets/bento-grid.png";
+import rentalImg from "@/app/assets/rentalku.png";
 
 const projectList = [
+  {
+    url: "https://rentalku.vercel.app/",
+    image: rentalImg,
+    title: "Rentalku",
+    details:
+      "Web app for renting cars. View and search your desired car, set your renting duration.",
+    stacks: ["TypeScript", "React", "Redux Toolkit", "Ant Design", "SCSS"],
+    gitUrl: "https://github.com/mirfanwebdev/rentalku",
+  },
   {
     url: "https://mirfanwebdev.github.io/frontend-mentor-news/",
     image: newsImg,
@@ -35,16 +45,16 @@ const projectList = [
     stacks: ["HTML", "Tailwind"],
     gitUrl: "https://github.com/mirfanwebdev/frontendmentor-huddle-landingpage",
   },
-  {
-    url: "https://23001028-14-kel2-car-rental-platinum-customer.vercel.app/",
-    image: binarImg,
-    title: "Car Rental - Customer",
-    details:
-      "Web app for renting cars. Login and register your account, view and search your desired car, and set your renting duration. Create order and pick your bank payment.",
-    stacks: ["Vite", "React", "Redux Toolkit", "Ant Design", "Vercel"],
-    gitUrl:
-      "https://github.com/jogisyamantha/23001028_14_kel2_car-rental_platinum_customer",
-  },
+  // {
+  //   url: "https://23001028-14-kel2-car-rental-platinum-customer.vercel.app/",
+  //   image: binarImg,
+  //   title: "Car Rental - Customer",
+  //   details:
+  //     "Web app for renting cars. Login and register your account, view and search your desired car, and set your renting duration. Create order and pick your bank payment.",
+  //   stacks: ["Vite", "React", "Redux Toolkit", "Ant Design", "Vercel"],
+  //   gitUrl:
+  //     "https://github.com/jogisyamantha/23001028_14_kel2_car-rental_platinum_customer",
+  // },
   // {
   //   title: "Restoku - Restaurant Admin",
   //   details:

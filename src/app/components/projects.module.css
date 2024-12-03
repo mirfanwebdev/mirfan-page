@@ -58,6 +58,7 @@
 
 .stacks {
   display: flex;
+  flex-wrap: wrap;
   gap: 0.5rem;
   align-items: center;
 }
@@ -68,10 +69,12 @@
   padding: 0.25rem 0.5rem;
   border-radius: 5px;
   text-align: center;
+  text-wrap: nowrap;
 }
 
 .projectsContainer:hover .stacks p {
   color: var(--light-primary);
+  padding: 0.25rem 0.45rem;
   border: 1px solid var(--light-primary);
 }
 
@@ -80,7 +83,7 @@
     flex-direction: column;
   }
   .image {
-    width: 90%;
+    width: 100%;
     align-self: center;
   }
 }
