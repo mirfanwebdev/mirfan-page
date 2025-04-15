@@ -1,12 +1,14 @@
 import { DiHtml5, DiCss3, DiJsBadge, DiReact, DiGit } from "react-icons/di";
 import {
-  SiLess,
   SiRedux,
   SiTypescript,
   SiTailwindcss,
   SiVuedotjs,
   SiNextdotjs,
   SiFigma,
+  SiPhp,
+  SiLaravel,
+  SiBootstrap,
 } from "react-icons/si";
 
 export const skillList = [
@@ -23,8 +25,16 @@ export const skillList = [
     icon: <DiJsBadge />,
   },
   {
+    name: "PHP",
+    icon: <SiPhp />,
+  },
+  {
     name: "React",
     icon: <DiReact />,
+  },
+  {
+    name: "Vue",
+    icon: <SiVuedotjs />,
   },
   {
     name: "Redux",
@@ -35,16 +45,16 @@ export const skillList = [
     icon: <SiNextdotjs />,
   },
   {
-    name: "Vue",
-    icon: <SiVuedotjs />,
+    name: "Laravel",
+    icon: <SiLaravel />,
   },
   {
     name: "Tailwind",
     icon: <SiTailwindcss />,
   },
   {
-    name: "Less",
-    icon: <SiLess />,
+    name: "Bootstrap",
+    icon: <SiBootstrap />,
   },
   {
     name: "TS",
