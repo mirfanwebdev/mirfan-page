@@ -1,0 +1,38 @@
+.experienceSection h3 {
+  padding: 1.2rem 0;
+  color: whitesmoke;
+}
+
+.listContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.experienceContainer {
+  display: flex;
+  gap: 2.5rem;
+  align-items: flex-start;
+  padding: 1.25rem 1rem;
+}
+
+.experienceContainer:hover {
+  background-color: var(--dark-secondary);
+  border-radius: 12px;
+}
+
+.experienceContainer .date {
+  text-transform: uppercase;
+  font-size: small;
+  font-weight: 600;
+}
+
+.experienceItem {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.experienceItem h3 {
+  padding: 0;
+}

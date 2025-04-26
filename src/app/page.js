@@ -1,6 +1,7 @@
 import Skills from "./components/skills";
 import Projects from "./components/projects";
 import styles from "./page.module.css";
+import Experiences from "./components/experiences";
 
 function About() {
   return (
@@ -42,6 +43,7 @@ export default function Home() {
   return (
     <>
       <About />
+      <Experiences />
       <Skills />
       <Projects />
       <Footer />
