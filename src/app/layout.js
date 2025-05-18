@@ -18,11 +18,15 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={montserrat.className}>
-        <div className="header-container">
-          <Navbar />
-          <Header />
-        </div>
-        <main className="main-container">{children}</main>
+        <main>
+          <div className="container">
+            <div className="header-container">
+              <Navbar />
+              <Header />
+            </div>
+            <div className="main-container">{children}</div>
+          </div>
+        </main>
       </body>
     </html>
   );
