@@ -32,7 +32,6 @@ a {
 main {
   margin: 0 auto;
   padding: 0 3rem;
-  /* min-height: 100vh; */
   max-width: 1280px;
 }
 
@@ -52,7 +51,6 @@ main {
   padding: 3rem 0;
   position: sticky;
   top: 0;
-  /* overflow: hidden; */
 }
 
 .main-container {
@@ -60,13 +58,12 @@ main {
   flex-direction: column;
   width: 52%;
   gap: 3rem;
-  /* margin-left: 550px; */
-  /* padding: 5rem 10rem; */
+  padding: 3rem 0;
 }
 
 @media screen and (max-width: 640px) {
   main {
-    padding: 0 1rem;
+    padding: 0;
   }
   .container {
     flex-direction: column;
