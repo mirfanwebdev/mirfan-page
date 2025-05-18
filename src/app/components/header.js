@@ -8,7 +8,7 @@ export default function Header() {
     <header className={styles.header}>
       <div className={styles.summary}>
         <h1>M. Irfan</h1>
-        <h2>Front End Web Developer</h2>
+        <h2>Fullstack Web Developer</h2>
         <p>
           Science and tech enthusiast who pursue his passion in web development.
         </p>

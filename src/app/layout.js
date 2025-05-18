@@ -9,22 +9,24 @@ export const metadata = {
   icons: {
     icon: "/icon.svg",
   },
-  title: "M. Irfan ",
+  title: "M. Irfan - Web Developer",
   description:
-    "M. irfan is former biologist who currently career switching to front end web developer",
+    "M. Irfan is science and tech enthusiast who pursue his passion in web development",
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={montserrat.className}>
-        <div className="wrapper">
-          <div className="header-container">
-            <Navbar />
-            <Header />
+        <main>
+          <div className="container">
+            <div className="header-container">
+              <Navbar />
+              <Header />
+            </div>
+            <div className="main-container">{children}</div>
           </div>
-          <main className="main-container">{children}</main>
-        </div>
+        </main>
       </body>
     </html>
   );

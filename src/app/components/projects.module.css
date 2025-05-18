@@ -1,23 +1,30 @@
 .projectSection > h3 {
   padding: 1.2rem 0;
-  color: whitesmoke;
+  /* color: whitesmoke; */
 }
 .projectsContainer {
   display: flex;
+  justify-content: space-between;
   gap: 1.5rem;
   padding: 1.25rem 1rem;
   position: relative;
   align-items: flex-start;
+  border: 2px solid transparent;
+  border-radius: 12px;
 }
 
 .projectsContainer:hover {
-  background-color: var(--dark-secondary);
-  border-radius: 12px;
+  border-color: var(--light-primary);
 }
 
 .projectsContainer:hover h3,
 .git:hover {
   color: var(--light-primary);
+}
+
+.projectsContainer:hover .image {
+  border-color: var(--light-primary);
+  scale: 1.05;
 }
 
 .projectsContainer h3 {
@@ -29,8 +36,8 @@
 }
 
 .image {
+  border: 1px solid var(--dark-secondary);
   border-radius: 8px;
-  /* width: 100%; */
   width: 200px;
   height: auto;
 }
@@ -65,18 +72,19 @@
 
 .stacks p {
   font-size: 0.75rem;
-  background-color: var(--dark-secondary);
+  background-color: var(--light-primary);
   padding: 0.25rem 0.5rem;
   border-radius: 5px;
   text-align: center;
   text-wrap: nowrap;
+  border: 1px solid transparent;
 }
 
-.projectsContainer:hover .stacks p {
+/* .projectsContainer:hover .stacks p {
+  background-color: transparent;
   color: var(--light-primary);
-  padding: 0.25rem 0.45rem;
-  border: 1px solid var(--light-primary);
-}
+  border-color: var(--light-primary);
+} */
 
 @media screen and (max-width: 640px) {
   .projectsContainer {

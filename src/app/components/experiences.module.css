@@ -1,0 +1,63 @@
+.experienceSection h3 {
+  padding: 1.2rem 0;
+  /* color: whitesmoke; */
+}
+
+.listContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.experienceContainer {
+  display: flex;
+  gap: 2.5rem;
+  align-items: flex-start;
+  padding: 1.25rem 1rem;
+  border: 2px solid transparent;
+  border-radius: 12px;
+}
+
+.experienceContainer:hover {
+  border-color: var(--light-primary);
+}
+
+.experienceContainer .date {
+  flex-shrink: 0;
+  width: 150px;
+  text-transform: uppercase;
+  color: var(--light-secondary);
+  font-size: small;
+  font-weight: 600;
+}
+
+.experienceContainer:hover .date {
+  color: var(--light-primary);
+}
+
+.experienceContainer:hover h4 {
+  color: var(--light-primary);
+}
+
+.experienceItem {
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+}
+
+.experienceItem h4 {
+  /* color: whitesmoke; */
+  padding: 0;
+}
+
+.experienceItem p {
+  font-size: 0.9rem;
+  line-height: 1.55;
+}
+
+@media screen and (max-width: 640px) {
+  .experienceContainer {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+}

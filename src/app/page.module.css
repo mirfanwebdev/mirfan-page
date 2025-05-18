@@ -6,7 +6,7 @@
 
 .aboutSection h3 {
   padding: 1.2rem 0;
-  color: whitesmoke;
+  /* color: whitesmoke; */
 }
 
 .aboutSection p {
@@ -15,7 +15,7 @@
 
 .aboutSection b {
   font-weight: 600;
-  color: whitesmoke;
+  /* color: whitesmoke; */
 }
 
 /* .projectSection > h3 {
