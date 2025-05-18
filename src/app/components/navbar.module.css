@@ -23,8 +23,9 @@
 
 .resume {
   padding: 0.25rem 0.75rem;
-  background-color: var(--dark-secondary);
+  /* background-color: var(--dark-secondary); */
   color: var(--light-primary);
+  border: 1px solid var(--light-primary);
   border-radius: 0.5rem;
   transition: all 0.4s ease-in-out;
 }

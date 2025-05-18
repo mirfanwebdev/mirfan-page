@@ -1,6 +1,6 @@
 .experienceSection h3 {
   padding: 1.2rem 0;
-  color: whitesmoke;
+  /* color: whitesmoke; */
 }
 
 .listContainer {
@@ -14,19 +14,29 @@
   gap: 2.5rem;
   align-items: flex-start;
   padding: 1.25rem 1rem;
+  border: 2px solid transparent;
+  border-radius: 12px;
 }
 
 .experienceContainer:hover {
-  background-color: var(--dark-secondary);
-  border-radius: 12px;
+  border-color: var(--light-primary);
 }
 
 .experienceContainer .date {
   flex-shrink: 0;
   width: 150px;
   text-transform: uppercase;
+  color: var(--light-secondary);
   font-size: small;
   font-weight: 600;
+}
+
+.experienceContainer:hover .date {
+  color: var(--light-primary);
+}
+
+.experienceContainer:hover h4 {
+  color: var(--light-primary);
 }
 
 .experienceItem {
@@ -36,7 +46,7 @@
 }
 
 .experienceItem h4 {
-  color: whitesmoke;
+  /* color: whitesmoke; */
   padding: 0;
 }
 

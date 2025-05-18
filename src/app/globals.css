@@ -4,6 +4,7 @@
   --dark-primary: #2d3250;
   --dark-secondary: #424769;
   --light-primary: #f6b17a;
+  --hover-light: #f6b17a80;
   --light-secondary: #7077a1;
   --text-primary: #c5cbed;
   /* --font-mono: ui-monospace, Menlo, Monaco, "Cascadia Mono", "Segoe UI Mono",
@@ -19,8 +20,8 @@
 
 html,
 body {
-  background-color: var(--dark-primary);
-  color: var(--text-primary);
+  /* background-color: var(--dark-primary); */
+  /* color: var(--text-primary); */
   scroll-behavior: smooth;
 }
 
