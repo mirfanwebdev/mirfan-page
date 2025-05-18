@@ -62,7 +62,7 @@ export default function Navbar() {
       ) : (
         <div
           className={styles.outerMenu}
-          style={{ background: "transparent" }}
+          style={{ backgroundColor: "transparent", zIndex: "-1" }}
         ></div>
       )}
       <div className={styles.mobileMenu} style={{ right: open ? "0" : "" }}>
