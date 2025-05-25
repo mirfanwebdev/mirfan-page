@@ -59,7 +59,7 @@
   inset: -1rem -1.5rem;
 }
 
-.stacks {
+/* .stacks {
   display: flex;
   flex-wrap: wrap;
   gap: 0.5rem;
@@ -74,7 +74,7 @@
   text-align: center;
   text-wrap: nowrap;
   border: 1px solid transparent;
-}
+} */
 
 /* .projectsContainer:hover .stacks p {
   background-color: transparent;

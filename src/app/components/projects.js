@@ -5,6 +5,7 @@ import { BsGithub } from "react-icons/bs";
 import projectList from "@/app/lib/projectList";
 import styles from "./projects.module.css";
 import SectionTitle from "./SectionTitle";
+import TechStackPill from "./TechStackPill";
 export default function Projects() {
   return (
     <section id="projects" className={styles.projectSection}>
@@ -43,11 +44,7 @@ export default function Projects() {
               </Link>
             )}
 
-            <div className={styles.stacks}>
-              {project.stacks?.map((stack) => (
-                <p key={stack}>{stack}</p>
-              ))}
-            </div>
+            <TechStackPill stacksArray={project.stacks} />
           </div>
         </div>
       ))}
