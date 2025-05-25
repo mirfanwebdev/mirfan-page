@@ -14,3 +14,9 @@
   text-wrap: nowrap;
   border: 1px solid transparent;
 }
+
+p.outline {
+  background-color: transparent;
+  border-color: var(--light-primary);
+  color: var(--light-primary);
+}

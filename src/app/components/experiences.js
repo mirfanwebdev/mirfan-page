@@ -1,6 +1,7 @@
 import { expList as list } from "@/app/lib/expList";
 import styles from "./experiences.module.css";
 import SectionTitle from "./SectionTitle";
+import TechStackPill from "./TechStackPill";
 
 export default function Experiences() {
   return (
@@ -14,6 +15,7 @@ export default function Experiences() {
             <div className={styles.experienceItem}>
               <h4>{item.title}</h4>
               <p>{item.description}</p>
+              <TechStackPill stacksArray={item.stacks} />
             </div>
           </li>
         ))}
