@@ -1,7 +1,3 @@
-.projectSection > h3 {
-  padding: 1.2rem 0;
-  /* color: whitesmoke; */
-}
 .projectsContainer {
   display: flex;
   justify-content: space-between;

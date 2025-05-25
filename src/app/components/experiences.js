@@ -1,10 +1,11 @@
 import { expList as list } from "@/app/lib/expList";
 import styles from "./experiences.module.css";
+import SectionTitle from "./SectionTitle";
 
 export default function Experiences() {
   return (
     <section id="experiences" className={styles.experienceSection}>
-      <h3>Experiences</h3>
+      <SectionTitle>Experiences</SectionTitle>
 
       <ul className={styles.listContainer}>
         {list.map((item) => (

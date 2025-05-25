@@ -4,10 +4,11 @@ import { MdArrowOutward } from "react-icons/md";
 import { BsGithub } from "react-icons/bs";
 import projectList from "@/app/lib/projectList";
 import styles from "./projects.module.css";
+import SectionTitle from "./SectionTitle";
 export default function Projects() {
   return (
     <section id="projects" className={styles.projectSection}>
-      <h3>Projects</h3>
+      <SectionTitle>Projects</SectionTitle>
 
       {projectList.map((project) => (
         <div key={project.title} className={styles.projectsContainer}>
