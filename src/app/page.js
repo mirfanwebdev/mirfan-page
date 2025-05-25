@@ -2,11 +2,12 @@ import Skills from "./components/skills";
 import Projects from "./components/projects";
 import styles from "./page.module.css";
 import Experiences from "./components/experiences";
+import SectionTitle from "./components/SectionTitle";
 
 function About() {
   return (
     <section id="about" className={styles.aboutSection}>
-      <h3>About Me</h3>
+      <SectionTitle>About Me</SectionTitle>
       <p>
         Fullstack Developer with passion for problem-solving and create
         meaningful website.

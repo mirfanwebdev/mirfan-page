@@ -1,0 +1,22 @@
+.stacks {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.stacks p {
+  font-size: 0.75rem;
+  background-color: var(--light-primary);
+  padding: 0.25rem 0.5rem;
+  border-radius: 5px;
+  text-align: center;
+  text-wrap: nowrap;
+  border: 1px solid transparent;
+}
+
+p.outline {
+  background-color: transparent;
+  border-color: var(--light-primary);
+  color: var(--light-primary);
+}
