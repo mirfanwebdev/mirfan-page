@@ -11,20 +11,21 @@
   gap: 0.5rem;
   justify-content: center;
   align-items: center;
-  background-color: var(--light-primary);
+  background-color: var(--text-primary);
+  color: var(--light-primary);
   padding: 0.5rem 0;
-  border: 2px solid var(--light-primary);
   border-radius: 8px;
+  box-shadow: var(--shadow-sm);
 }
 
 .skillItem:hover {
-  background-color: transparent;
-  color: var(--light-primary);
+  background-color: var(--hover-light);
+  /* color: var(--light-primary); */
 }
 
 @media screen and (max-width: 640px) {
   .skillList {
-    grid-template-columns: 42.5vw 42.5vw;
+    grid-template-columns: auto auto;
     font-size: 20px;
   }
 

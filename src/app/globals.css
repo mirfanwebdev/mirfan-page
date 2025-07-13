@@ -1,12 +1,14 @@
 :root {
   --max-width: 1100px;
   --border-radius: 12px;
-  --dark-primary: #2d3250;
-  --dark-secondary: #424769;
-  --light-primary: #f6b17a;
-  --hover-light: #f6b17a80;
-  --light-secondary: #7077a1;
-  --text-primary: #c5cbed;
+  --dark-primary: hsl(0, 0%, 5%);
+  --dark-secondary: hsl(0, 0%, 20%);
+  --light-primary: hsl(38, 100%, 60%);
+  --hover-light: hsl(38, 100%, 80%);
+  --light-secondary: hsl(0, 0%, 70%);
+  --bg-light: hsl(0, 0%, 90%);
+  --text-primary: hsl(0, 0%, 95%);
+  --shadow-sm: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
   /* --font-mono: ui-monospace, Menlo, Monaco, "Cascadia Mono", "Segoe UI Mono",
     "Roboto Mono", "Oxygen Mono", "Ubuntu Monospace", "Source Code Pro",
     "Fira Mono", "Droid Sans Mono", "Courier New", monospace; */
@@ -20,8 +22,10 @@
 
 html,
 body {
-  /* background-color: var(--dark-primary); */
-  /* color: var(--text-primary); */
+  /* background-color: var(--dark-primary);
+  color: var(--text-primary); */
+  background-color: var(--bg-light);
+  color: var(--dark-primary);
   scroll-behavior: smooth;
 }
 
@@ -40,7 +44,6 @@ main {
   display: flex;
   gap: 1rem;
   justify-content: space-between;
-
 }
 
 .header-container {

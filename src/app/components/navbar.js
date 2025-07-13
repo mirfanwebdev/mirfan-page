@@ -84,7 +84,10 @@ export default function Navbar() {
           ))}
         </div>
         <Link className={styles.resume} target="_blank" href="resume.pdf">
-          Resume <MdArrowOutward />
+          Resume{" "}
+          <span className={styles.arrow}>
+            <MdArrowOutward />
+          </span>
         </Link>
       </div>
       <div className={styles.toggle}>

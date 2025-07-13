@@ -6,16 +6,16 @@
 
 .aboutSection h3 {
   padding: 1.2rem 0;
-  /* color: whitesmoke; */
 }
 
 .aboutSection p {
   line-height: 1.5;
+  color: var(--dark-secondary);
 }
 
 .aboutSection b {
   font-weight: 600;
-  /* color: whitesmoke; */
+  color: var(--dark-primary);
 }
 
 /* .projectSection > h3 {
@@ -73,6 +73,7 @@
 
 .footer {
   font-size: 0.9rem;
+  color: var(--dark-secondary);
 }
 
 .footer b {
