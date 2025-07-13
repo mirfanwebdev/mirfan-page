@@ -23,8 +23,8 @@
 
 .resume {
   padding: 0.25rem 0.75rem;
-  /* background-color: var(--dark-secondary); */
-  color: var(--light-primary);
+  background-color: var(--text-primary);
+  color: var(--dark-primary);
   border: 1px solid var(--light-primary);
   border-radius: 0.5rem;
   transition: all 0.4s ease-in-out;
@@ -33,6 +33,16 @@
 .resume:hover {
   background-color: var(--light-primary);
   color: var(--dark-secondary);
+}
+
+.resume:hover .arrow {
+  color: var(--dark-primary);
+  scale: 1.5;
+}
+
+.arrow {
+  /* transition: all 0.4s ease-in-out; */
+  color: var(--light-primary);
 }
 
 .toggle {

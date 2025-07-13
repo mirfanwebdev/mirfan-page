@@ -7,7 +7,7 @@
 
 .stacks p {
   font-size: 0.75rem;
-  background-color: var(--light-primary);
+  background-color: var(--hover-light);
   padding: 0.25rem 0.5rem;
   border-radius: 5px;
   text-align: center;

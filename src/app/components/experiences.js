@@ -9,16 +9,18 @@ export default function Experiences() {
       <SectionTitle>Experiences</SectionTitle>
 
       <ul className={styles.listContainer}>
-        {list.map((item) => (
-          <li className={styles.experienceContainer} key={item.id}>
-            <p className={styles.date}>{item.date}</p>
-            <div className={styles.experienceItem}>
-              <h4>{item.title}</h4>
-              <p>{item.description}</p>
-              <TechStackPill stacksArray={item.stacks} />
-            </div>
-          </li>
-        ))}
+        {list
+          .sort((a, b) => b.id - a.id)
+          .map((item) => (
+            <li className={styles.experienceContainer} key={item.id}>
+              <p className={styles.date}>{item.date}</p>
+              <div className={styles.experienceItem}>
+                <h4>{item.title}</h4>
+                <p>{item.description}</p>
+                <TechStackPill stacksArray={item.stacks} />
+              </div>
+            </li>
+          ))}
       </ul>
     </section>
   );
