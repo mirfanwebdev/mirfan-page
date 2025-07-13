@@ -10,7 +10,9 @@
 }
 
 .projectsContainer:hover {
-  border-color: var(--light-primary);
+  /* border-color: var(--light-primary); */
+  background-color: var(--text-primary);
+  box-shadow: var(--shadow-sm);
 }
 
 .projectsContainer:hover h3,
@@ -19,7 +21,7 @@
 }
 
 .projectsContainer:hover .image {
-  border-color: var(--light-primary);
+  /* border-color: var(--light-primary); */
   scale: 1.05;
 }
 
@@ -36,6 +38,7 @@
   border-radius: 8px;
   width: 200px;
   height: auto;
+  transition: all 0.3s ease-in-out;
 }
 
 .info {
